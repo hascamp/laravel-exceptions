@@ -1,0 +1,38 @@
+{
+    "name": "hascamp/laravel-exceptions",
+    "type": "library",
+    "description": "Logging with various laravel projects.",
+    "license": "MIT",
+    "support": {
+        "issues": "https://github.com/hascamp/laravel-exceptions/issues",
+        "source": "https://github.com/hascamp/laravel-exceptions"
+    },
+    "authors": [
+        {
+            "name": "Fariz Huzairi",
+            "email": "farizhuzairi@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^8.2"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^9.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "Hascamp\\Exceptions\\": "Exceptions/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Hascamp\\Exceptions\\HascampExceptionsServiceProvider"
+            ]
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "dev"
+}

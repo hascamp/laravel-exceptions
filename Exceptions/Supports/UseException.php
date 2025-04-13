@@ -33,7 +33,6 @@ trait UseException
         Log::{$level}($this->message, array_merge(
             $this->error,
             [
-                'message' => $this->getMessage(),
                 'code' => $this->getCode(),
                 'file' => $this->getFile(),
                 'line' => $this->getLine(),
